@@ -5,8 +5,8 @@ const controllerFunc = require('../Controller/controller')
 
 router.post('/register',controllerFunc.register)
 router.post('/login',controllerFunc.login)
-router.put('/update/:id',controllerFunc.updateProfile)
-router.delete('/delete/:id',controllerFunc.deleteProfile)
+router.put('/updateProfile/:id',controllerFunc.updateProfile)
+router.delete('/deleteProfile/:id',controllerFunc.deleteProfile)
 
 router.get('/',(req,res)=>{
         user.find({}).then(user=>{
