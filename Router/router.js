@@ -8,7 +8,7 @@ router.post('/login',controllerFunc.login)
 router.put('/update/:id',controllerFunc.updateProfile)
 router.delete('/delete/:id',controllerFunc.deleteProfile)
 
-router.get('/getAllUsers',(req,res)=>{
+router.get('/',(req,res)=>{
         user.find({}).then(user=>{
             res.json(user)
         })
